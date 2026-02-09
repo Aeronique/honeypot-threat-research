@@ -35,10 +35,10 @@ T-Pot bundles several different honeypots into one system. Each honeypot pretend
 
 ```
 /reports
-  - campaign-analysis.md          # Detailed breakdown of five major campaigns
-  - vulnerability-exploitation.md # CVE targeting and legacy system analysis
-  - infrastructure-tracking.md    # ASN patterns and cloud provider abuse
-  - credential-intelligence.md    # Password patterns and attack methods
+  - campaign-analysis.md          
+  - vulnerability-exploitation.md 
+  - infrastructure-tracking.md    
+  - credential-intelligence.md    
 
 /visualizations
   - Dashboard screenshots
