@@ -4,7 +4,7 @@ A 31-day experiment setting up a honeypot to see what happens when you expose vu
 
 ## Project Summary
 
-I deployed a T-Pot honeypot on Google Cloud Platform for a month (December 31, 2025 to January 30, 2026) to capture real attack traffic. Over 31 days, the honeypot logged 5.5 million attack events from all over the world.
+I deployed a T-Pot honeypot on Google Cloud Platform for a month (December 31, 2025 to January 30, 2026) to capture real attack traffic. Over 31 days, the honeypot logged 2 million attack events from all over the world.
 
 ### Goals
 
@@ -19,7 +19,7 @@ I deployed a T-Pot honeypot on Google Cloud Platform for a month (December 31, 2
 Platform: T-Pot Community Edition (free, packages multiple honeypots together)  
 Server: Ubuntu 24.04 LTS on Google Cloud Platform  
 Runtime: 31 days continuous  
-Total Events: ~5.5 million  
+Total Events: ~2 million  
 
 ### Honeypot Components
 
