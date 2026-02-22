@@ -102,6 +102,18 @@ The following limitations apply to this dataset and are disclosed in the interes
 
 ---
 
+## CVE Enrichment Sources
+
+CVE data referenced in this project's reports is enriched using the following sources:
+
+| Source | URL | Used For |
+|--------|-----|----------|
+| Shodan CVEDB | cvedb.shodan.io | Primary CVE lookup. Returns CVSS v2/v3 scores, EPSS probability and ranking, KEV status, and affected CPEs in a single query. |
+| NIST National Vulnerability Database | nvd.nist.gov | Official CVE descriptions and CVSS scores. Used to verify Shodan CVEDB data and for CVEs not yet indexed there. |
+| CISA Known Exploited Vulnerabilities Catalog | cisa.gov/known-exploited-vulnerabilities-catalog | Authoritative source for KEV status. Cross-referenced when KEV status is a primary finding in a report. |
+
+---
+
 ## Lessons Learned from First Deployment
 
 Kibana dashboard screenshots were used as the primary collection method during the prior 31-day deployment. That approach introduced inconsistencies because screenshot timing affected which events had been indexed, multi-day windows appeared in some screenshots, and cumulative totals could not be independently verified after log retention removed older indices.
