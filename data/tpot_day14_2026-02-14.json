@@ -1,0 +1,528 @@
+DAY 14 - February 14, 2026
+
+TOTAL COUNT:
+{
+  "count": 2874657,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 258,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 2413,
+      "sum_other_doc_count": 187930,
+      "buckets": [
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 1356009
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 560912
+        },
+        {
+          "key": "JL INFORMATICA E TELECOM LTDA - ME",
+          "doc_count": 289666
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 129966
+        },
+        {
+          "key": "LANTEC COMUNICACAO MULTIMIDIA LTDA",
+          "doc_count": 50321
+        },
+        {
+          "key": "Alibaba US Technology Co., Ltd.",
+          "doc_count": 32203
+        },
+        {
+          "key": "FOP Dmytro Nedilskyi",
+          "doc_count": 31766
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 31582
+        },
+        {
+          "key": "Hangzhou Alibaba Advertising Co.,Ltd.",
+          "doc_count": 24312
+        },
+        {
+          "key": "Unmanaged Ltd",
+          "doc_count": 21518
+        },
+        {
+          "key": "Censys, Inc.",
+          "doc_count": 14637
+        },
+        {
+          "key": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+          "doc_count": 11731
+        },
+        {
+          "key": "RouterHosting LLC",
+          "doc_count": 11605
+        },
+        {
+          "key": "Akamai Connected Cloud",
+          "doc_count": 10605
+        },
+        {
+          "key": "Microsoft Corporation",
+          "doc_count": 10117
+        },
+        {
+          "key": "Tencent Building, Kejizhongyi Avenue",
+          "doc_count": 10114
+        },
+        {
+          "key": "Vpsvault.host Ltd",
+          "doc_count": 7736
+        },
+        {
+          "key": "Pfcloud UG (haftungsbeschrankt)",
+          "doc_count": 7413
+        },
+        {
+          "key": "Shenzhen Tencent Computer Systems Company Limited",
+          "doc_count": 6897
+        },
+        {
+          "key": "MEVSPACE sp. z o.o.",
+          "doc_count": 6227
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 341,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 2239,
+      "sum_other_doc_count": 863103,
+      "buckets": [
+        {
+          "key": "194.50.16.198",
+          "doc_count": 1354975
+        },
+        {
+          "key": "134.199.202.110",
+          "doc_count": 75661
+        },
+        {
+          "key": "159.89.117.122",
+          "doc_count": 74947
+        },
+        {
+          "key": "134.199.197.11",
+          "doc_count": 73249
+        },
+        {
+          "key": "129.212.176.30",
+          "doc_count": 70608
+        },
+        {
+          "key": "134.199.195.17",
+          "doc_count": 70426
+        },
+        {
+          "key": "138.197.152.232",
+          "doc_count": 69392
+        },
+        {
+          "key": "187.108.1.130",
+          "doc_count": 50321
+        },
+        {
+          "key": "80.94.93.5",
+          "doc_count": 20126
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 17278
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14464
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9369
+        },
+        {
+          "key": "185.156.73.167",
+          "doc_count": 7796
+        },
+        {
+          "key": "185.156.73.166",
+          "doc_count": 7318
+        },
+        {
+          "key": "138.197.197.127",
+          "doc_count": 6628
+        },
+        {
+          "key": "92.63.197.59",
+          "doc_count": 6189
+        },
+        {
+          "key": "129.212.176.14",
+          "doc_count": 6055
+        },
+        {
+          "key": "92.63.197.92",
+          "doc_count": 5771
+        },
+        {
+          "key": "160.44.201.156",
+          "doc_count": 5517
+        },
+        {
+          "key": "87.120.191.13",
+          "doc_count": 5309
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 185,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 356
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 356
+        },
+        {
+          "key": "ET EXPLOIT Apache ActiveMQ Remote Code Execution Attempt (CVE-2023-46604)",
+          "doc_count": 238
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 53
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 38
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 6
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server - Path Traversal Attempt (CVE-2021-42013) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server 2.4.49 - Path Traversal Attempt (CVE-2021-41773) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT LB-Link Command Injection Attempt (CVE-2023-26801)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Possible Zimbra Autodiscover Servlet XXE (CVE-2019-9670)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Zimbra <8.8.11 - XML External Entity Injection/SSRF Attempt (CVE-2019-9621)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11900 IP-in-IP tunnel Double-Free",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS MVPower CCTV DVR /shell JAWS Webserver Unauthenticated Remote Command Execution (CVE-2016-20016)",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 76,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 158,
+      "sum_other_doc_count": 13249,
+      "buckets": [
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 135102
+        },
+        {
+          "key": "ET INFO User-Agent (python-requests) Inbound to Webserver",
+          "doc_count": 108655
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 30010
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 30010
+        },
+        {
+          "key": "GPL ICMP PING",
+          "doc_count": 19987
+        },
+        {
+          "key": "SURICATA Applayer Wrong direction first Data",
+          "doc_count": 3091
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 2889
+        },
+        {
+          "key": "ET HUNTING Mozilla User-Agent (Mozilla/5.0) Inbound Likely Fake",
+          "doc_count": 1961
+        },
+        {
+          "key": "GPL WEB_SERVER robots.txt access",
+          "doc_count": 1957
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 1769
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 970
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 884
+        },
+        {
+          "key": "SURICATA STREAM Packet with broken ack",
+          "doc_count": 700
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 517
+        },
+        {
+          "key": "ET SCAN Potential SSH Scan",
+          "doc_count": 501
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 457
+        },
+        {
+          "key": "SURICATA STREAM FIN recv but no session",
+          "doc_count": 405
+        },
+        {
+          "key": "SURICATA Applayer Detect protocol only one direction",
+          "doc_count": 361
+        },
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 356
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 343,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 823,
+      "sum_other_doc_count": 1647999,
+      "buckets": [
+        {
+          "key": 5900,
+          "doc_count": 594424
+        },
+        {
+          "key": 443,
+          "doc_count": 297996
+        },
+        {
+          "key": 22,
+          "doc_count": 93102
+        },
+        {
+          "key": 8443,
+          "doc_count": 27040
+        },
+        {
+          "key": 8728,
+          "doc_count": 11685
+        },
+        {
+          "key": 80,
+          "doc_count": 9718
+        },
+        {
+          "key": 5902,
+          "doc_count": 7295
+        },
+        {
+          "key": 5910,
+          "doc_count": 6509
+        },
+        {
+          "key": 5925,
+          "doc_count": 6059
+        },
+        {
+          "key": 587,
+          "doc_count": 4500
+        },
+        {
+          "key": 5990,
+          "doc_count": 3622
+        },
+        {
+          "key": 5980,
+          "doc_count": 3545
+        },
+        {
+          "key": 23,
+          "doc_count": 3216
+        },
+        {
+          "key": 25,
+          "doc_count": 3173
+        },
+        {
+          "key": 5970,
+          "doc_count": 3053
+        },
+        {
+          "key": 5060,
+          "doc_count": 2834
+        },
+        {
+          "key": 3306,
+          "doc_count": 2633
+        },
+        {
+          "key": 5038,
+          "doc_count": 2157
+        },
+        {
+          "key": 5965,
+          "doc_count": 2147
+        },
+        {
+          "key": 9200,
+          "doc_count": 2097
+        }
+      ]
+    }
+  }
+}

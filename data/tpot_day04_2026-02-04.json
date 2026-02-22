@@ -1,0 +1,568 @@
+DAY 4 - February 4, 2026
+
+TOTAL COUNT:
+{
+  "count": 6426519,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 406,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 2545,
+      "sum_other_doc_count": 183397,
+      "buckets": [
+        {
+          "key": "FOP Dmytro Nedilskyi",
+          "doc_count": 1291089
+        },
+        {
+          "key": "GA Telecom",
+          "doc_count": 1182668
+        },
+        {
+          "key": "HostPapa",
+          "doc_count": 1018465
+        },
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 820896
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 711193
+        },
+        {
+          "key": "NETCOM TELECOMUNICACOES LTDA",
+          "doc_count": 501510
+        },
+        {
+          "key": "INSIGHT PARA TECNOLOGIA LTDA - ME",
+          "doc_count": 185983
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 95291
+        },
+        {
+          "key": "Eagle Redes de Telecomunicacoes Ltda",
+          "doc_count": 88391
+        },
+        {
+          "key": "RVA TELECOM LTDA",
+          "doc_count": 59197
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 58357
+        },
+        {
+          "key": "CELANTE SERVICOS DE TELECOMUNICACOES LTDA - EPP",
+          "doc_count": 49919
+        },
+        {
+          "key": "TOTAL PLAY TELECOMUNICACIONES SA DE CV",
+          "doc_count": 36519
+        },
+        {
+          "key": "Pfcloud UG (haftungsbeschrankt)",
+          "doc_count": 22777
+        },
+        {
+          "key": "ONYPHE SAS",
+          "doc_count": 16250
+        },
+        {
+          "key": "Censys, Inc.",
+          "doc_count": 14898
+        },
+        {
+          "key": "Modat B.V.",
+          "doc_count": 12246
+        },
+        {
+          "key": "BITNET TELECOM",
+          "doc_count": 10554
+        },
+        {
+          "key": "Akamai Connected Cloud",
+          "doc_count": 8670
+        },
+        {
+          "key": "RouterHosting LLC",
+          "doc_count": 8443
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 682,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 3072,
+      "sum_other_doc_count": 2604001,
+      "buckets": [
+        {
+          "key": "88.210.63.79",
+          "doc_count": 1246157
+        },
+        {
+          "key": "209.54.102.136",
+          "doc_count": 1014940
+        },
+        {
+          "key": "45.95.147.229",
+          "doc_count": 820438
+        },
+        {
+          "key": "134.199.202.110",
+          "doc_count": 73546
+        },
+        {
+          "key": "165.227.47.158",
+          "doc_count": 72905
+        },
+        {
+          "key": "159.203.58.78",
+          "doc_count": 72679
+        },
+        {
+          "key": "159.89.117.122",
+          "doc_count": 72115
+        },
+        {
+          "key": "134.199.203.119",
+          "doc_count": 71407
+        },
+        {
+          "key": "134.199.197.11",
+          "doc_count": 70404
+        },
+        {
+          "key": "138.197.152.232",
+          "doc_count": 48472
+        },
+        {
+          "key": "129.212.176.30",
+          "doc_count": 48397
+        },
+        {
+          "key": "134.199.195.17",
+          "doc_count": 48265
+        },
+        {
+          "key": "187.191.2.214",
+          "doc_count": 36459
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 15698
+        },
+        {
+          "key": "204.76.203.210",
+          "doc_count": 15383
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14707
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9674
+        },
+        {
+          "key": "185.156.73.62",
+          "doc_count": 7572
+        },
+        {
+          "key": "92.63.197.23",
+          "doc_count": 7374
+        },
+        {
+          "key": "92.63.197.92",
+          "doc_count": 7155
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 338,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Vite Arbitrary File Read Via raw parameter (CVE-2025-30208)",
+          "doc_count": 54
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 42
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 41
+        },
+        {
+          "key": "ET EXPLOIT VMware Spring Cloud Directory Traversal (CVE-2020-5410)",
+          "doc_count": 18
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 11
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server - Path Traversal Attempt (CVE-2021-42013) M2",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server 2.4.49 - Path Traversal Attempt (CVE-2021-41773) M2",
+          "doc_count": 2
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS D-Link gena.cgi service Parameter Command Injection Attempt (CVE-2025-13562, CVE-2024-23624, CVE-2019-17621)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT LB-Link Command Injection Attempt (CVE-2023-26801)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET EXPLOIT Multiple DLink Routers Remote Code Execution CVE-2019-16920",
+          "doc_count": 1
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11900 IP-in-IP tunnel Double-Free",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SERVER GNU InetUtils Authentication Bypass via USER Environment Variable (CVE-2026-24061)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Apache HugeGraph <1.2.0 Unauthenticated Remote Code Execution (CVE-2024-27348)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Belkin mp command Parameter Command Injection Attempt (CVE-2025-7083)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Draytek mainfunction.cgi cvmcfgupload Command Injection Attempt (CVE-2020-15415)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Edimax N300 mp command Parameter Command Injection Attempt (CVE-2023-31983)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Four-Faith adjust_sys_time adj_time Command Injection Attempt (CVE-2024-12856)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS QNAP Viostor server.cgi SPECIFIC_SERVER Parameter Command Injection Attempt (CVE-2023-47565)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS ServiceNow Command Injection Attempt (CVE-2024-5217,2024-4879) M2",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS TBK DVR-4104/4216 Command Injection Attempt (CVE-2024-3721)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS TVT language Command Injection Attempt (CVE-2025-34036)",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 204,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 144,
+      "sum_other_doc_count": 15751,
+      "buckets": [
+        {
+          "key": "GPL SNMP request udp",
+          "doc_count": 208404
+        },
+        {
+          "key": "GPL SNMP public access udp",
+          "doc_count": 208390
+        },
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 154506
+        },
+        {
+          "key": "ET INFO User-Agent (python-requests) Inbound to Webserver",
+          "doc_count": 79714
+        },
+        {
+          "key": "GPL ICMP PING",
+          "doc_count": 25001
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 24254
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 24254
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 3426
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 3309
+        },
+        {
+          "key": "SURICATA Applayer Wrong direction first Data",
+          "doc_count": 2912
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 1945
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 1798
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 1461
+        },
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 1316
+        },
+        {
+          "key": "GPL WEB_SERVER apache directory disclosure attempt",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET HUNTING Mozilla User-Agent (Mozilla/5.0) Inbound Likely Fake",
+          "doc_count": 1208
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 991
+        },
+        {
+          "key": "GPL SNMP missing community string attempt",
+          "doc_count": 842
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 701
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 579,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 1120,
+      "sum_other_doc_count": 1070669,
+      "buckets": [
+        {
+          "key": 443,
+          "doc_count": 2083246
+        },
+        {
+          "key": 8443,
+          "doc_count": 1204896
+        },
+        {
+          "key": 161,
+          "doc_count": 1015192
+        },
+        {
+          "key": 5900,
+          "doc_count": 672719
+        },
+        {
+          "key": 22,
+          "doc_count": 99553
+        },
+        {
+          "key": 5902,
+          "doc_count": 7490
+        },
+        {
+          "key": 8728,
+          "doc_count": 6727
+        },
+        {
+          "key": 5910,
+          "doc_count": 6567
+        },
+        {
+          "key": 3001,
+          "doc_count": 5727
+        },
+        {
+          "key": 80,
+          "doc_count": 4924
+        },
+        {
+          "key": 4173,
+          "doc_count": 4894
+        },
+        {
+          "key": 5173,
+          "doc_count": 4893
+        },
+        {
+          "key": 23,
+          "doc_count": 4457
+        },
+        {
+          "key": 8080,
+          "doc_count": 3458
+        },
+        {
+          "key": 5432,
+          "doc_count": 2690
+        },
+        {
+          "key": 5433,
+          "doc_count": 2371
+        },
+        {
+          "key": 3000,
+          "doc_count": 2138
+        },
+        {
+          "key": 631,
+          "doc_count": 2130
+        },
+        {
+          "key": 25,
+          "doc_count": 2010
+        },
+        {
+          "key": 3306,
+          "doc_count": 1883
+        }
+      ]
+    }
+  }
+}
