@@ -1,0 +1,528 @@
+DAY 21 - February 21, 2026
+
+TOTAL COUNT:
+{
+  "count": 4128638,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 318,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 2540,
+      "sum_other_doc_count": 208797,
+      "buckets": [
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 3069907
+        },
+        {
+          "key": "GKG NET TELECON LTDA",
+          "doc_count": 168668
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 115315
+        },
+        {
+          "key": "Enoki & Ruiz Ltda - ME",
+          "doc_count": 114307
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 107208
+        },
+        {
+          "key": "Contabo GmbH",
+          "doc_count": 81055
+        },
+        {
+          "key": "JL INFORMATICA E TELECOM LTDA - ME",
+          "doc_count": 44239
+        },
+        {
+          "key": "Hangzhou Alibaba Advertising Co.,Ltd.",
+          "doc_count": 26549
+        },
+        {
+          "key": "Alibaba US Technology Co., Ltd.",
+          "doc_count": 21335
+        },
+        {
+          "key": "Contabo Inc.",
+          "doc_count": 18392
+        },
+        {
+          "key": "HostPapa",
+          "doc_count": 17295
+        },
+        {
+          "key": "Censys, Inc.",
+          "doc_count": 14746
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 12854
+        },
+        {
+          "key": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+          "doc_count": 12650
+        },
+        {
+          "key": "RouterHosting LLC",
+          "doc_count": 11130
+        },
+        {
+          "key": "Modat B.V.",
+          "doc_count": 10133
+        },
+        {
+          "key": "Private Layer INC",
+          "doc_count": 10127
+        },
+        {
+          "key": "Nerushenko Vyacheslav Nikolaevich",
+          "doc_count": 10022
+        },
+        {
+          "key": "Shenzhen Tencent Computer Systems Company Limited",
+          "doc_count": 9263
+        },
+        {
+          "key": "T-Systems International GmbH",
+          "doc_count": 8468
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 483,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 1124,
+      "sum_other_doc_count": 782117,
+      "buckets": [
+        {
+          "key": "194.50.16.198",
+          "doc_count": 3069556
+        },
+        {
+          "key": "173.212.236.96",
+          "doc_count": 78520
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 17348
+        },
+        {
+          "key": "217.216.49.107",
+          "doc_count": 17161
+        },
+        {
+          "key": "129.212.183.117",
+          "doc_count": 14929
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14609
+        },
+        {
+          "key": "96.44.174.22",
+          "doc_count": 13712
+        },
+        {
+          "key": "46.19.137.194",
+          "doc_count": 10091
+        },
+        {
+          "key": "82.147.84.74",
+          "doc_count": 9779
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9464
+        },
+        {
+          "key": "160.44.201.156",
+          "doc_count": 8462
+        },
+        {
+          "key": "129.212.184.194",
+          "doc_count": 8327
+        },
+        {
+          "key": "68.230.196.113",
+          "doc_count": 6960
+        },
+        {
+          "key": "138.197.197.127",
+          "doc_count": 6591
+        },
+        {
+          "key": "129.212.176.14",
+          "doc_count": 6013
+        },
+        {
+          "key": "167.71.66.127",
+          "doc_count": 4906
+        },
+        {
+          "key": "216.126.239.202",
+          "doc_count": 4538
+        },
+        {
+          "key": "172.86.114.11",
+          "doc_count": 3973
+        },
+        {
+          "key": "165.245.138.210",
+          "doc_count": 3575
+        },
+        {
+          "key": "134.199.204.151",
+          "doc_count": 2825
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 269,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 7684
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 7684
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 77
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 50
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 9
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 6
+        },
+        {
+          "key": "ET EXPLOIT Apache ActiveMQ Remote Code Execution Attempt (CVE-2023-46604)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server - Path Traversal Attempt (CVE-2021-42013) M2",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server 2.4.49 - Path Traversal Attempt (CVE-2021-41773) M2",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT LB-Link Command Injection Attempt (CVE-2023-26801)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Oracle WebLogic Deserialization (CVE-2018-2893)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11900 IP-in-IP tunnel Double-Free",
+          "doc_count": 1
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11910 anomalous ICMPv4 type 3,code 4 Path MTU Discovery",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Langflow AI Unauthenticated Remote Code Execution via Code Validation Endpoint (CVE-2025-3248)",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 175,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 157,
+      "sum_other_doc_count": 12450,
+      "buckets": [
+        {
+          "key": "ET INFO User-Agent (python-requests) Inbound to Webserver",
+          "doc_count": 296731
+        },
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 40838
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 17451
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 17451
+        },
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 7684
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 7684
+        },
+        {
+          "key": "GPL WEB_SERVER apache directory disclosure attempt",
+          "doc_count": 7684
+        },
+        {
+          "key": "ET SCAN Sipsak SIP scan",
+          "doc_count": 4568
+        },
+        {
+          "key": "GPL ICMP PING",
+          "doc_count": 3704
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 2803
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 2321
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 1421
+        },
+        {
+          "key": "ET EXPLOIT [PTsecurity] DoublePulsar Backdoor installation communication",
+          "doc_count": 1152
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 955
+        },
+        {
+          "key": "SURICATA Applayer Wrong direction first Data",
+          "doc_count": 630
+        },
+        {
+          "key": "SURICATA STREAM Packet with broken ack",
+          "doc_count": 523
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 522
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 469
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 113",
+          "doc_count": 328
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 280
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 531,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 865,
+      "sum_other_doc_count": 3339988,
+      "buckets": [
+        {
+          "key": 443,
+          "doc_count": 333795
+        },
+        {
+          "key": 5900,
+          "doc_count": 179285
+        },
+        {
+          "key": 22,
+          "doc_count": 35764
+        },
+        {
+          "key": 7000,
+          "doc_count": 26395
+        },
+        {
+          "key": 8000,
+          "doc_count": 26160
+        },
+        {
+          "key": 7070,
+          "doc_count": 25665
+        },
+        {
+          "key": 5060,
+          "doc_count": 22985
+        },
+        {
+          "key": 2323,
+          "doc_count": 11716
+        },
+        {
+          "key": 23,
+          "doc_count": 9501
+        },
+        {
+          "key": 5902,
+          "doc_count": 6675
+        },
+        {
+          "key": 5910,
+          "doc_count": 6497
+        },
+        {
+          "key": 5925,
+          "doc_count": 6013
+        },
+        {
+          "key": 80,
+          "doc_count": 5285
+        },
+        {
+          "key": 64297,
+          "doc_count": 4762
+        },
+        {
+          "key": 5901,
+          "doc_count": 3821
+        },
+        {
+          "key": 587,
+          "doc_count": 3716
+        },
+        {
+          "key": 5434,
+          "doc_count": 2822
+        },
+        {
+          "key": 8728,
+          "doc_count": 2435
+        },
+        {
+          "key": 5444,
+          "doc_count": 2177
+        },
+        {
+          "key": 445,
+          "doc_count": 2085
+        }
+      ]
+    }
+  }
+}
