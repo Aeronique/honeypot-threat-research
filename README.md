@@ -107,6 +107,7 @@ Full details are in [DATA_COLLECTION_METHODOLOGY.md](DATA_COLLECTION_METHODOLOGY
 - Elasticsearch 8.x / Kibana 8.x
 - Suricata IDS
 - Google Cloud Platform
+- [Claude](https://claude.ai) (Anthropic) — mathematical and statistical analysis
 
 ---
 
