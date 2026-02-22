@@ -1,96 +1,115 @@
-# Honeypot Threat Research
+# honeypot-threat-research
 
-A 31-day experiment setting up a honeypot to see what happens when you expose vulnerable services to the internet.
+I deployed a T-Pot honeypot on Google Cloud for 28 days and left it exposed to the internet to see what would show up. This repo documents the attack campaigns that emerged, the CVEs being actively exploited, where the traffic was coming from, and what patterns kept repeating across the full deployment.
 
-## Project Summary
-
-I deployed a T-Pot honeypot on Google Cloud Platform for a month (December 31, 2025 to January 30, 2026) to capture real attack traffic. Over 31 days, the honeypot logged 2 million attack events from all over the world.
-
-### Goals
-
-- Understand how attack campaigns work from start to finish
-- Identify actively targeted vulnerabilities
-- Learn to spot campaign patterns in large datasets
-- Practice writing threat intelligence reports
-
-## Deployment Details
-
-**Infrastructure:**  
-Platform: T-Pot Community Edition (free, packages multiple honeypots together)  
-Server: Ubuntu 24.04 LTS on Google Cloud Platform  
-Runtime: 31 days continuous  
-Total Events: ~2 million  
-
-### Honeypot Components
-
-T-Pot bundles several different honeypots into one system. Each honeypot pretends to be a different vulnerable service:
-
-- **Cowrie** simulates SSH and Telnet servers
-- **Honeytrap** handles multiple network protocols
-- **Dionaea** is designed to capture malware
-- **Sentrypeer** focuses on VoIP/SIP attacks
-- Plus several others for different attack types
-
-## Repository Structure (Tenative)
-
-```
-/reports
-  - campaign-analysis.md          
-  - vulnerability-exploitation.md 
-  - infrastructure-tracking.md    
-  - credential-intelligence.md    
-
-/visualizations
-  - Dashboard screenshots
-  - Attack maps and geographic distributions
-  - Temporal pattern charts
-
-/indicators
-  - High-confidence IOCs
-  - Suricata signatures
-  - ASN and IP listings
-```
-
-## Analysis Methodology
-
-Daily snapshots were collected at consistent intervals from Kibana dashboards. Each day's analysis tracked attacker ASNs, source IPs, geographic distribution, port targeting, Suricata signatures, CVE exploitation attempts, and credential patterns.
-
-Campaigns were identified through correlation analysis across multiple metrics: sudden volume spikes, sustained presence from specific infrastructure, metric correlation (geography + ASN + attack type), and clean campaign transitions.
-
-The challenge was distinguishing coordinated campaigns from coincidental timing. Attribution decisions were made by correlating geography, infrastructure (ASN), and attack characteristics.
-
-## Technical Infrastructure
-
-**Analysis stack:**
-- Elasticsearch for event storage and querying
-- Kibana for dashboard visualization
-- Google Cloud Storage for automated backups
-- Suricata for signature detection
-
-**System management:**
-- Automated nightly backups to Google Cloud Storage
-- Health monitoring scripts for early problem detection
-- Proactive component restarts during high-volume periods to prevent data loss
-
-## Background
-
-I have operational and tactical intellignce experience from previous work, but this was my first project focused specifically on operational cyber threat intelligence. The goal was to learn CTI fundamentals by deploying infrastructure, processing attack data at scale, and identifying patterns in millions of events.
-
-Working through 5.5 million individual events to identify discrete campaigns was more difficult than expected, but taught me how to extract significant intelligence from large security datasets.
-
-## Reports
-
-Detailed analysis reports are in development, covering:
-- Campaign lifecycles and operational patterns
-- Vulnerability exploitation analysis
-- Infrastructure tracking and attribution
-- Credential intelligence and common patterns
-- Defensive recommendations based on observed TTPs
-
-These will be added to `/reports` as completed.
+All data was pulled directly from Elasticsearch using DSL queries through the Kibana Dev Tools console. Every number in this project is verifiable and sourced from raw query output saved in the `data/` directory.
 
 ---
 
-**Questions?** Open an issue if you want to know more about the methodology or specific campaign analysis.
+## Deployment at a Glance
 
-**Analysis Period:** December 31, 2025 to January 30, 2026
+| | |
+|---|---|
+| **Platform** | T-Pot Community Edition on Ubuntu 24.04 LTS |
+| **Infrastructure** | Google Cloud Platform |
+| **Period** | February 1 to February 28, 2026 |
+| **Total Events** | TBD (final count March 1, 2026) |
+| **Days Captured** | 28 of 28 |
+| **Collection Method** | Elasticsearch DSL queries, daily |
+
+---
+
+## What's in Here
+
+```
+honeypot-threat-research/
+│
+├── README.md
+├── DATA_COLLECTION_METHODOLOGY.md
+│
+├── data/
+│   ├── tpot_day01_2026-02-01.json
+│   ├── tpot_day02_2026-02-02.json
+│   └── ... (one file per day)
+│
+├── reports/
+│   ├── 01_top_cves.md
+│   ├── 02_most_recent_cve.md
+│   ├── 03_campaign_[name].md
+│   ├── 04_geographic_attribution.md
+│   ├── 05_threat_actor_assessment.md
+│   ├── 06_future_attack_trends.md
+│   ├── 07_credential_attack_patterns.md
+│   ├── 08_legacy_vulnerability_exploitation.md
+│   ├── 09_cloud_infrastructure_abuse.md
+│   ├── 10_port_targeting_analysis.md
+│   └── 11_suricata_signature_analysis.md
+│
+└── screenshots/
+    └── final_dataset_2026-03-01.png
+```
+
+---
+
+## Reports
+
+### Vulnerability Exploitation
+
+| Report | Description |
+|--------|-------------|
+| [Top CVEs](reports/01_top_cves.md) | The three highest-volume CVEs across the full deployment, with daily counts and campaign context |
+| [Most Recent CVE](reports/02_most_recent_cve.md) | How fast attackers picked up a newly disclosed CVE and started using it |
+| [Legacy Vulnerability Exploitation](reports/08_legacy_vulnerability_exploitation.md) | CVEs from 2006 and earlier that were still showing up daily, and what that says about the state of unpatched systems |
+
+### Campaign Analysis
+
+| Report | Description |
+|--------|-------------|
+| [Campaign Reports](reports/) | One report per significant campaign, covering emergence, targeting, infrastructure, and withdrawal |
+| [Suricata Signature Analysis](reports/11_suricata_signature_analysis.md) | What the top alert signatures tell us about attacker tooling and how they correlate with specific campaigns |
+
+### Infrastructure and Attribution
+
+| Report | Description |
+|--------|-------------|
+| [Geographic Attribution](reports/04_geographic_attribution.md) | Where attacks originated, with discussion of how cloud provider and VPN exit node usage affects attribution confidence |
+| [Cloud Infrastructure Abuse](reports/09_cloud_infrastructure_abuse.md) | How much attack traffic came from DigitalOcean, Google Cloud, and Amazon, and what attackers are doing with rented infrastructure |
+| [Threat Actor Assessment](reports/05_threat_actor_assessment.md) | What CVE selection, tooling signatures, and operational patterns suggest about the actors involved |
+
+### Behavioral Analysis
+
+| Report | Description |
+|--------|-------------|
+| [Credential Attack Patterns](reports/07_credential_attack_patterns.md) | The usernames and passwords that showed up most often, what they target, and which credential pattern dominated the deployment |
+| [Port Targeting Analysis](reports/10_port_targeting_analysis.md) | Which services attracted the most traffic and how port targeting shifted as campaigns changed |
+
+### Strategic Assessment
+
+| Report | Description |
+|--------|-------------|
+| [Future Attack Trends](reports/06_future_attack_trends.md) | What the observed patterns suggest about where the threat landscape is heading, which vulnerabilities are gaining traction, and what defenders should be watching |
+
+---
+
+## A Note on Methodology
+
+Data was collected daily using six Elasticsearch queries scoped to individual 24-hour windows. Internal Google Cloud VM traffic was excluded from all queries to keep counts clean. Everything is saved as raw JSON exactly as Elasticsearch returned it.
+
+On March 1, 2026 a final full-dataset screenshot was taken before log retention started removing older indices. That screenshot serves as the cumulative reference for totals across the full deployment.
+
+Full details are in [DATA_COLLECTION_METHODOLOGY.md](DATA_COLLECTION_METHODOLOGY.md).
+
+---
+
+## Tools Used
+
+- [T-Pot Community Edition](https://github.com/telekom-security/tpotce)
+- Elasticsearch 8.x / Kibana 8.x
+- Suricata IDS
+- Google Cloud Platform
+
+---
+
+## Disclaimer
+
+This honeypot ran on infrastructure I own and operated for research purposes. Everything in this repo represents attack attempts against a system I deliberately exposed. No third-party systems were accessed or affected.
