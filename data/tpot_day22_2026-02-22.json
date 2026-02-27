@@ -1,0 +1,516 @@
+DAY 22 - February 22, 2026
+
+TOTAL COUNT:
+{
+  "count": 2716489,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 244,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 2941,
+      "sum_other_doc_count": 188351,
+      "buckets": [
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 1306020
+        },
+        {
+          "key": "Smart Servico de Internet Ltda",
+          "doc_count": 607818
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 161636
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 108774
+        },
+        {
+          "key": "Enoki & Ruiz Ltda - ME",
+          "doc_count": 57864
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 43855
+        },
+        {
+          "key": "WT NET COMUNICACAO LTDA",
+          "doc_count": 31341
+        },
+        {
+          "key": "GKG NET TELECON LTDA",
+          "doc_count": 29392
+        },
+        {
+          "key": "Hangzhou Alibaba Advertising Co.,Ltd.",
+          "doc_count": 25159
+        },
+        {
+          "key": "Alibaba US Technology Co., Ltd.",
+          "doc_count": 20740
+        },
+        {
+          "key": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+          "doc_count": 19553
+        },
+        {
+          "key": "Censys, Inc.",
+          "doc_count": 14357
+        },
+        {
+          "key": "Private Layer INC",
+          "doc_count": 10409
+        },
+        {
+          "key": "RouterHosting LLC",
+          "doc_count": 9399
+        },
+        {
+          "key": "Akamai Connected Cloud",
+          "doc_count": 8448
+        },
+        {
+          "key": "Shenzhen Tencent Computer Systems Company Limited",
+          "doc_count": 8366
+        },
+        {
+          "key": "Oracle Corporation",
+          "doc_count": 8055
+        },
+        {
+          "key": "Tamatiya EOOD",
+          "doc_count": 7928
+        },
+        {
+          "key": "Modat B.V.",
+          "doc_count": 7274
+        },
+        {
+          "key": "Microsoft Corporation",
+          "doc_count": 6668
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 304,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 2045,
+      "sum_other_doc_count": 1226337,
+      "buckets": [
+        {
+          "key": "194.50.16.198",
+          "doc_count": 1305661
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 17037
+        },
+        {
+          "key": "129.212.183.117",
+          "doc_count": 14496
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14367
+        },
+        {
+          "key": "134.199.197.108",
+          "doc_count": 11168
+        },
+        {
+          "key": "165.245.138.210",
+          "doc_count": 10475
+        },
+        {
+          "key": "46.19.137.194",
+          "doc_count": 10404
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9210
+        },
+        {
+          "key": "129.212.184.194",
+          "doc_count": 8109
+        },
+        {
+          "key": "138.197.197.127",
+          "doc_count": 6519
+        },
+        {
+          "key": "129.212.176.14",
+          "doc_count": 5979
+        },
+        {
+          "key": "68.230.196.113",
+          "doc_count": 5862
+        },
+        {
+          "key": "45.61.149.206",
+          "doc_count": 5804
+        },
+        {
+          "key": "160.44.201.156",
+          "doc_count": 5280
+        },
+        {
+          "key": "167.71.66.127",
+          "doc_count": 4820
+        },
+        {
+          "key": "44.220.188.248",
+          "doc_count": 4354
+        },
+        {
+          "key": "18.97.26.9",
+          "doc_count": 4329
+        },
+        {
+          "key": "95.85.244.132",
+          "doc_count": 4323
+        },
+        {
+          "key": "18.97.26.20",
+          "doc_count": 3937
+        },
+        {
+          "key": "45.227.253.170",
+          "doc_count": 3923
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 123,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 74
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 40
+        },
+        {
+          "key": "ET EXPLOIT Apache ActiveMQ Remote Code Execution Attempt (CVE-2023-46604)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 7
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11910 anomalous ICMPv4 type 3,code 4 Path MTU Discovery",
+          "doc_count": 6
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 6
+        },
+        {
+          "key": "ET EXPLOIT LB-Link Command Injection Attempt (CVE-2023-26801)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server - Path Traversal Attempt (CVE-2021-42013) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server 2.4.49 - Path Traversal Attempt (CVE-2021-41773) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Langflow AI Unauthenticated Remote Code Execution via Code Validation Endpoint (CVE-2025-3248)",
+          "doc_count": 1
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS TBK DVR-4104/4216 Command Injection Attempt (CVE-2024-3721)",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 65,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 138,
+      "sum_other_doc_count": 11218,
+      "buckets": [
+        {
+          "key": "ET INFO User-Agent (python-requests) Inbound to Webserver",
+          "doc_count": 125964
+        },
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 39898
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 16991
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 16991
+        },
+        {
+          "key": "GPL ICMP PING",
+          "doc_count": 6221
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 3077
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 2541
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 1599
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 1200
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 993
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 723
+        },
+        {
+          "key": "SURICATA Applayer Wrong direction first Data",
+          "doc_count": 699
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 597
+        },
+        {
+          "key": "SURICATA STREAM Packet with broken ack",
+          "doc_count": 394
+        },
+        {
+          "key": "SURICATA Applayer Detect protocol only one direction",
+          "doc_count": 311
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 109",
+          "doc_count": 297
+        },
+        {
+          "key": "ET VOIP MultiTech SIP UDP Overflow",
+          "doc_count": 257
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 113",
+          "doc_count": 251
+        },
+        {
+          "key": "ET INFO Reserved Internal IP Traffic",
+          "doc_count": 225
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 246",
+          "doc_count": 218
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 5,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 754,
+      "sum_other_doc_count": 1576308,
+      "buckets": [
+        {
+          "key": 443,
+          "doc_count": 742243
+        },
+        {
+          "key": 5900,
+          "doc_count": 172280
+        },
+        {
+          "key": 22,
+          "doc_count": 52279
+        },
+        {
+          "key": 5903,
+          "doc_count": 11595
+        },
+        {
+          "key": 5901,
+          "doc_count": 11196
+        },
+        {
+          "key": 80,
+          "doc_count": 10230
+        },
+        {
+          "key": 5902,
+          "doc_count": 7048
+        },
+        {
+          "key": 5060,
+          "doc_count": 6926
+        },
+        {
+          "key": 5910,
+          "doc_count": 6469
+        },
+        {
+          "key": 5925,
+          "doc_count": 5991
+        },
+        {
+          "key": 23,
+          "doc_count": 5585
+        },
+        {
+          "key": 8443,
+          "doc_count": 5287
+        },
+        {
+          "key": 64297,
+          "doc_count": 5118
+        },
+        {
+          "key": 5434,
+          "doc_count": 3913
+        },
+        {
+          "key": 8728,
+          "doc_count": 3144
+        },
+        {
+          "key": 9870,
+          "doc_count": 2692
+        },
+        {
+          "key": 587,
+          "doc_count": 2560
+        },
+        {
+          "key": 5435,
+          "doc_count": 2484
+        },
+        {
+          "key": 5433,
+          "doc_count": 2397
+        },
+        {
+          "key": 3306,
+          "doc_count": 2230
+        }
+      ]
+    }
+  }
+}

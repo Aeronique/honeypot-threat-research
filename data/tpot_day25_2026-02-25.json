@@ -1,0 +1,528 @@
+DAY 25 - February 25, 2026
+
+TOTAL COUNT:
+{
+  "count": 3423383,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 156,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 5324,
+      "sum_other_doc_count": 363511,
+      "buckets": [
+        {
+          "key": "Smart Servico de Internet Ltda",
+          "doc_count": 1385967
+        },
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 419115
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 169562
+        },
+        {
+          "key": "COMPUTIZE NETWORK TELECOMUNICACOES LTDA",
+          "doc_count": 168192
+        },
+        {
+          "key": "JL INFORMATICA E TELECOM LTDA - ME",
+          "doc_count": 121074
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 107175
+        },
+        {
+          "key": "OpsTelecom Servico em Telecomunicacoes Ltda",
+          "doc_count": 106735
+        },
+        {
+          "key": "Eurocorp Vialux Internet Eireli",
+          "doc_count": 96250
+        },
+        {
+          "key": "TOTAL PLAY TELECOMUNICACIONES SA DE CV",
+          "doc_count": 95899
+        },
+        {
+          "key": "MUNDIVOX DO BRASIL LTDA",
+          "doc_count": 52192
+        },
+        {
+          "key": "RADIOBRAS TELECOM LTDA ME",
+          "doc_count": 51898
+        },
+        {
+          "key": "Meteor Cloud LTDA",
+          "doc_count": 39871
+        },
+        {
+          "key": "ALT | GRUPO BRASIL TECPAR",
+          "doc_count": 36792
+        },
+        {
+          "key": "ALGAR TELECOM SA",
+          "doc_count": 27786
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 27685
+        },
+        {
+          "key": "Reliance Jio Infocomm Limited",
+          "doc_count": 26291
+        },
+        {
+          "key": "Google Fiber Inc.",
+          "doc_count": 25102
+        },
+        {
+          "key": "Hangzhou Alibaba Advertising Co.,Ltd.",
+          "doc_count": 24670
+        },
+        {
+          "key": "Ecxon Datacenter LTDA",
+          "doc_count": 19708
+        },
+        {
+          "key": "G2G NETWORKS SERVICOS DE COMUNICACAO",
+          "doc_count": 19146
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 329,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 1644,
+      "sum_other_doc_count": 2636470,
+      "buckets": [
+        {
+          "key": "194.50.16.198",
+          "doc_count": 418739
+        },
+        {
+          "key": "187.191.2.214",
+          "doc_count": 95854
+        },
+        {
+          "key": "136.232.233.194",
+          "doc_count": 26252
+        },
+        {
+          "key": "129.212.183.117",
+          "doc_count": 25238
+        },
+        {
+          "key": "136.44.32.174",
+          "doc_count": 25102
+        },
+        {
+          "key": "165.245.138.210",
+          "doc_count": 21199
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 16558
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14482
+        },
+        {
+          "key": "170.64.152.136",
+          "doc_count": 14111
+        },
+        {
+          "key": "216.126.224.112",
+          "doc_count": 11832
+        },
+        {
+          "key": "134.199.197.108",
+          "doc_count": 11343
+        },
+        {
+          "key": "130.12.181.176",
+          "doc_count": 10531
+        },
+        {
+          "key": "46.19.137.194",
+          "doc_count": 10192
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9236
+        },
+        {
+          "key": "129.212.184.194",
+          "doc_count": 7960
+        },
+        {
+          "key": "122.187.17.253",
+          "doc_count": 7305
+        },
+        {
+          "key": "138.197.197.127",
+          "doc_count": 6642
+        },
+        {
+          "key": "129.212.176.14",
+          "doc_count": 6074
+        },
+        {
+          "key": "160.44.201.156",
+          "doc_count": 5250
+        },
+        {
+          "key": "167.71.66.127",
+          "doc_count": 4779
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 239,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 74
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 14
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Vite Arbitrary File Read Via raw parameter (CVE-2025-30208)",
+          "doc_count": 12
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 10
+        },
+        {
+          "key": "ET EXPLOIT Apache ActiveMQ Remote Code Execution Attempt (CVE-2023-46604)",
+          "doc_count": 6
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS ConnectWise ScreenConnect - Attempted SetupWizard Auth Bypass CWE-288 (CVE-2024-1709)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 4
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server - Path Traversal Attempt (CVE-2021-42013) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT Apache HTTP Server 2.4.49 - Path Traversal Attempt (CVE-2021-41773) M2",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT LB-Link Command Injection Attempt (CVE-2023-26801)",
+          "doc_count": 3
+        },
+        {
+          "key": "ET EXPLOIT Mikrotik Winbox RCE Attempt (CVE-2018-14847)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT VMware Spring Cloud Directory Traversal (CVE-2020-5410)",
+          "doc_count": 2
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2020-11900 IP-in-IP tunnel Double-Free",
+          "doc_count": 1
+        },
+        {
+          "key": "ET EXPLOIT Realtek SDK - Command Execution/Backdoor Access Inbound (CVE-2021-35394)",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 99,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 131,
+      "sum_other_doc_count": 11343,
+      "buckets": [
+        {
+          "key": "SURICATA STREAM Packet with broken ack",
+          "doc_count": 64979
+        },
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 59375
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 19072
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 19072
+        },
+        {
+          "key": "GPL ICMP PING",
+          "doc_count": 9387
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 3159
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 3154
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 1024
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 813
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 681
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 544
+        },
+        {
+          "key": "SURICATA Applayer Wrong direction first Data",
+          "doc_count": 509
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 483
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 110",
+          "doc_count": 358
+        },
+        {
+          "key": "ET INFO Reserved Internal IP Traffic",
+          "doc_count": 226
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 105",
+          "doc_count": 191
+        },
+        {
+          "key": "SURICATA STREAM spurious retransmission",
+          "doc_count": 178
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 38",
+          "doc_count": 164
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 42",
+          "doc_count": 154
+        },
+        {
+          "key": "SURICATA Applayer Detect protocol only one direction",
+          "doc_count": 154
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 285,
+  "timed_out": false,
+  "_shards": {
+    "total": 31,
+    "successful": 31,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 816,
+      "sum_other_doc_count": 717424,
+      "buckets": [
+        {
+          "key": 443,
+          "doc_count": 2189168
+        },
+        {
+          "key": 5900,
+          "doc_count": 258833
+        },
+        {
+          "key": 445,
+          "doc_count": 59102
+        },
+        {
+          "key": 80,
+          "doc_count": 18376
+        },
+        {
+          "key": 5060,
+          "doc_count": 15652
+        },
+        {
+          "key": 22,
+          "doc_count": 14780
+        },
+        {
+          "key": 5903,
+          "doc_count": 11465
+        },
+        {
+          "key": 5905,
+          "doc_count": 11210
+        },
+        {
+          "key": 5904,
+          "doc_count": 10831
+        },
+        {
+          "key": 5901,
+          "doc_count": 10710
+        },
+        {
+          "key": 5910,
+          "doc_count": 7778
+        },
+        {
+          "key": 5907,
+          "doc_count": 6955
+        },
+        {
+          "key": 5902,
+          "doc_count": 6782
+        },
+        {
+          "key": 5925,
+          "doc_count": 6105
+        },
+        {
+          "key": 5906,
+          "doc_count": 5348
+        },
+        {
+          "key": 23,
+          "doc_count": 4188
+        },
+        {
+          "key": 5433,
+          "doc_count": 3870
+        },
+        {
+          "key": 25565,
+          "doc_count": 2850
+        },
+        {
+          "key": 5908,
+          "doc_count": 2644
+        },
+        {
+          "key": 8728,
+          "doc_count": 2434
+        }
+      ]
+    }
+  }
+}
