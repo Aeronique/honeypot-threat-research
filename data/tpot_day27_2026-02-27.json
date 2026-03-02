@@ -1,0 +1,672 @@
+DAY 27 - February 27, 2026
+
+TOTAL COUNT:
+{
+  "count": 3203680,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  }
+}
+
+TOP ASNs:
+{
+  "took": 387,
+  "timed_out": false,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_asns": {
+      "doc_count_error_upper_bound": 5650,
+      "sum_other_doc_count": 457922,
+      "buckets": [
+        {
+          "key": "Alsycon B.V.",
+          "doc_count": 886321
+        },
+        {
+          "key": "Sinal do Ceu Telecom Comercio e Servicos Ltda",
+          "doc_count": 407276
+        },
+        {
+          "key": "JK TELECOMUNICACOES LTDA",
+          "doc_count": 262859
+        },
+        {
+          "key": "DigitalOcean, LLC",
+          "doc_count": 183474
+        },
+        {
+          "key": "ALCANS TELECOM LTDA",
+          "doc_count": 156202
+        },
+        {
+          "key": "Enoki & Ruiz Ltda - ME",
+          "doc_count": 123715
+        },
+        {
+          "key": "COMPUTIZE NETWORK TELECOMUNICACOES LTDA",
+          "doc_count": 123489
+        },
+        {
+          "key": "Google LLC",
+          "doc_count": 109536
+        },
+        {
+          "key": "Layer7 Networks GmbH",
+          "doc_count": 89549
+        },
+        {
+          "key": "Lima e Carvalho Ltda",
+          "doc_count": 74133
+        },
+        {
+          "key": "Dynu Systems Incorporated",
+          "doc_count": 62762
+        },
+        {
+          "key": "67 TELECOM",
+          "doc_count": 35335
+        },
+        {
+          "key": "HostPapa",
+          "doc_count": 29734
+        },
+        {
+          "key": "BOT INTERNET E SERVICOS DE TELECOMUNICACOES LTDA",
+          "doc_count": 29625
+        },
+        {
+          "key": "Omegatech LTD",
+          "doc_count": 24998
+        },
+        {
+          "key": "LLC Vash Kredit Bank",
+          "doc_count": 22700
+        },
+        {
+          "key": "OVH SAS",
+          "doc_count": 21655
+        },
+        {
+          "key": "Amazon.com, Inc.",
+          "doc_count": 19371
+        },
+        {
+          "key": "DpkgSoft International Limited",
+          "doc_count": 18141
+        },
+        {
+          "key": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+          "doc_count": 17135
+        }
+      ]
+    }
+  }
+}
+
+TOP IPs:
+{
+  "took": 383,
+  "timed_out": false,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 3477,
+      "sum_other_doc_count": 1930951,
+      "buckets": [
+        {
+          "key": "194.50.16.73",
+          "doc_count": 332467
+        },
+        {
+          "key": "194.50.16.198",
+          "doc_count": 322626
+        },
+        {
+          "key": "77.83.240.70",
+          "doc_count": 230762
+        },
+        {
+          "key": "185.55.240.152",
+          "doc_count": 89549
+        },
+        {
+          "key": "207.174.0.19",
+          "doc_count": 49546
+        },
+        {
+          "key": "129.212.183.117",
+          "doc_count": 24806
+        },
+        {
+          "key": "93.123.118.208",
+          "doc_count": 22700
+        },
+        {
+          "key": "165.245.138.210",
+          "doc_count": 19982
+        },
+        {
+          "key": "170.64.152.136",
+          "doc_count": 19109
+        },
+        {
+          "key": "134.199.196.58",
+          "doc_count": 16510
+        },
+        {
+          "key": "157.245.190.78",
+          "doc_count": 14258
+        },
+        {
+          "key": "176.120.22.240",
+          "doc_count": 13497
+        },
+        {
+          "key": "142.202.191.102",
+          "doc_count": 13075
+        },
+        {
+          "key": "134.199.197.108",
+          "doc_count": 10696
+        },
+        {
+          "key": "172.94.9.39",
+          "doc_count": 9970
+        },
+        {
+          "key": "68.183.13.228",
+          "doc_count": 9366
+        },
+        {
+          "key": "129.212.184.194",
+          "doc_count": 7887
+        },
+        {
+          "key": "46.19.137.194",
+          "doc_count": 6654
+        },
+        {
+          "key": "138.197.197.127",
+          "doc_count": 6462
+        },
+        {
+          "key": "103.79.247.223",
+          "doc_count": 6002
+        }
+      ]
+    }
+  }
+}
+
+TOP CVEs:
+{
+  "took": 285,
+  "timed_out": false,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_cves": {
+      "doc_count_error_upper_bound": 4,
+      "sum_other_doc_count": 708,
+      "buckets": [
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 1019
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 1019
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt (http ldap) (CVE-2021-44228)",
+          "doc_count": 132
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt (tcp ldap) (CVE-2021-44228)",
+          "doc_count": 132
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt - 2021/12/12 Obfuscation Observed (tcp) (CVE-2021-44228)",
+          "doc_count": 132
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt - lower/upper TCP Bypass M2 (CVE-2021-44228)",
+          "doc_count": 132
+        },
+        {
+          "key": "ET HUNTING Possible Apache log4j RCE Attempt - Any Protocol TCP (CVE-2021-44228)",
+          "doc_count": 132
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Shenzhen TVT NVMS-9000 Information Disclosure Attempt (CVE-2024-14007)",
+          "doc_count": 64
+        },
+        {
+          "key": "ET EXPLOIT Realtek eCos RSDK/MSDK Stack-based Buffer Overflow Attempt Inbound (CVE-2022-27255)",
+          "doc_count": 43
+        },
+        {
+          "key": "ET WEB_SERVER Possible CVE-2014-6271 Attempt in HTTP Cookie",
+          "doc_count": 36
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)",
+          "doc_count": 26
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS PHP-CGI OS Command Injection (soft hyphen) (CVE-2024-4577)",
+          "doc_count": 18
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt - lower/upper TCP Bypass M1 (CVE-2021-44228)",
+          "doc_count": 16
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Apache OFBiz Pre-Auth Remote Code Execution Attempt (CVE-2024-38856)",
+          "doc_count": 16
+        },
+        {
+          "key": "ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M1",
+          "doc_count": 12
+        },
+        {
+          "key": "ET WEB_SERVER Possible Apache Struts OGNL Command Execution CVE-2013-2251 action",
+          "doc_count": 12
+        },
+        {
+          "key": "ET WEB_SERVER Possible Apache Struts OGNL Command Execution CVE-2013-2251 redirect",
+          "doc_count": 12
+        },
+        {
+          "key": "ET WEB_SERVER Possible Apache Struts OGNL Command Execution CVE-2013-2251 redirectAction",
+          "doc_count": 12
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Vite Arbitrary File Read Via raw parameter (CVE-2025-30208)",
+          "doc_count": 12
+        },
+        {
+          "key": "ET EXPLOIT Possible Dovecot Memory Corruption Inbound (CVE-2019-11500)",
+          "doc_count": 10
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Oracle WebLogic Deserialization (CVE-2018-2893)",
+          "doc_count": 10
+        },
+        {
+          "key": "ET EXPLOIT TP-Link Archer AX21 Unauthenticated Command Injection Inbound (CVE-2023-1389)",
+          "doc_count": 9
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS ServiceNow Command Injection Attempt (CVE-2024-5217,2024-4879) M3",
+          "doc_count": 9
+        },
+        {
+          "key": "ET CURRENT_EVENTS Possible Atlassian Confluence CVE-2023-22515 Scan Activity",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Apache Tommcat/JBoss RCE Inbound (CVE-2013-4810)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Apache log4j RCE Attempt - 2021/12/13 Obfuscation Observed (tcp) (CVE-2021-44228)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT F5 BIG-IP - Password Reset Attempt - Observed Post CVE-2023-46747 Activity",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT F5 BIG-IP iControl REST Authentication Bypass (CVE-2022-1388) M1",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Kramer VIAware Remote Code Execution (CVE-2021-35064 CVE-2021-36356)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT ManageEngine AdSelfService Plus - Arbritrary File Upload Attempt (CVE-2021-40539)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Microsoft Exchange Pre-Auth Path Confusion M1 (CVE-2021-31207)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Multiple DLink Routers Remote Code Execution CVE-2019-16920",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Possible Apache log4j RCE Attempt - 2021/12/12 Obfuscation Observed M2 (tcp) (CVE-2021-44228)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Possible Apache log4j RCE Attempt - 2021/12/13 Obfuscation Observed (tcp) (CVE-2021-44228)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Possible CVE-2014-3704 Drupal SQLi attempt URLENCODE 1",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Possible Oracle E-Business RCE Attempt Inbound M2 (CVE-2022-21587)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT Telesquare SDT-CW3B1 1.1.0 - OS Command Injection (CVE-2021-46422)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT VMware Spring Cloud Gateway Code Injection (CVE-2022-22947) (set)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT [NCC/FOX-IT] Possible F5 BIG-IP/BIG-IQ iControl REST RCE Attempt (CVE-2021-22986)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET EXPLOIT eMerge E3 Command Injection Inbound (CVE-2019-7256)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET HUNTING Possible Apache log4j RCE Attempt - Any Protocol (lower TCP Bypass) (CVE-2021-44228)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS ASUS DSL-AC88U Authentication Bypass Attempt (CVE-2024-3080)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Allnet ALL-RUT22GW 4G LTE Cellular Router Unauthenticated Remote Code Execution (CVE-2025-29269)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Apache OFBiz Directory Traversal Remote Code Execution Attempt (CVE-2024-36104)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS D-Link NAS OS Command Injection in cgi_user_add Function (CVE-2024-10914)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Fortra GoAnywhere MFT Authentication Bypass via License Servlet (CVE-2025-10035)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS FoxCMS id Parameter Command Injection Attempt (CVE-2025-29306)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS FreePBX ajax.php endpoint module SQL Injection Attempt (CVE-2025-57819) M2",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS Progress WhatsUp Gold Pre-Auth Password Encrypt Primitive (CVE-2024-6670)",
+          "doc_count": 8
+        },
+        {
+          "key": "ET WEB_SPECIFIC_APPS TP-Link Authentication Bypass Attempt (CVE-2024-57050,2024-57049)",
+          "doc_count": 8
+        }
+      ]
+    }
+  }
+}
+
+TOP SIGNATURES:
+{
+  "took": 102,
+  "timed_out": false,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_signatures": {
+      "doc_count_error_upper_bound": 160,
+      "sum_other_doc_count": 18217,
+      "buckets": [
+        {
+          "key": "GPL INFO VNC server response",
+          "doc_count": 72899
+        },
+        {
+          "key": "ET INFO User-Agent (python-requests) Inbound to Webserver",
+          "doc_count": 31780
+        },
+        {
+          "key": "SURICATA AF-PACKET truncated packet",
+          "doc_count": 23344
+        },
+        {
+          "key": "SURICATA IPv4 truncated packet",
+          "doc_count": 23344
+        },
+        {
+          "key": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+          "doc_count": 7921
+        },
+        {
+          "key": "ET DROP Dshield Block Listed Source group 1",
+          "doc_count": 2631
+        },
+        {
+          "key": "ET SCAN NMAP -sS window 1024",
+          "doc_count": 1316
+        },
+        {
+          "key": "ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)",
+          "doc_count": 1019
+        },
+        {
+          "key": "ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)",
+          "doc_count": 1019
+        },
+        {
+          "key": "GPL WEB_SERVER apache directory disclosure attempt",
+          "doc_count": 1019
+        },
+        {
+          "key": "ET INFO SSH-2.0-Go version string Observed in Network Traffic",
+          "doc_count": 960
+        },
+        {
+          "key": "ET INFO SSH session in progress on Expected Port",
+          "doc_count": 862
+        },
+        {
+          "key": "ET INFO SSH session in progress on Unusual Port",
+          "doc_count": 587
+        },
+        {
+          "key": "SURICATA STREAM Packet with broken ack",
+          "doc_count": 502
+        },
+        {
+          "key": "ET CINS Active Threat Intelligence Poor Reputation IP group 110",
+          "doc_count": 462
+        },
+        {
+          "key": "GPL WEB_SERVER /etc/passwd",
+          "doc_count": 400
+        },
+        {
+          "key": "SURICATA Applayer Detect protocol only one direction",
+          "doc_count": 345
+        },
+        {
+          "key": "ET WEB_SERVER /etc/passwd Detected in URI",
+          "doc_count": 278
+        },
+        {
+          "key": "ET HUNTING RDP Authentication Bypass Attempt",
+          "doc_count": 269
+        },
+        {
+          "key": "ET INFO Login Credentials Possibly Passed in POST Data",
+          "doc_count": 239
+        }
+      ]
+    }
+  }
+}
+
+TOP PORTS:
+{
+  "took": 421,
+  "timed_out": false,
+  "_shards": {
+    "total": 32,
+    "successful": 32,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ports": {
+      "doc_count_error_upper_bound": 1099,
+      "sum_other_doc_count": 1222396,
+      "buckets": [
+        {
+          "key": 443,
+          "doc_count": 1220871
+        },
+        {
+          "key": 5900,
+          "doc_count": 429135
+        },
+        {
+          "key": 4567,
+          "doc_count": 91364
+        },
+        {
+          "key": 22,
+          "doc_count": 32254
+        },
+        {
+          "key": 8443,
+          "doc_count": 22308
+        },
+        {
+          "key": 8728,
+          "doc_count": 11070
+        },
+        {
+          "key": 5903,
+          "doc_count": 10950
+        },
+        {
+          "key": 5905,
+          "doc_count": 10771
+        },
+        {
+          "key": 5901,
+          "doc_count": 10567
+        },
+        {
+          "key": 5904,
+          "doc_count": 10359
+        },
+        {
+          "key": 80,
+          "doc_count": 9964
+        },
+        {
+          "key": 5910,
+          "doc_count": 9683
+        },
+        {
+          "key": 5902,
+          "doc_count": 6916
+        },
+        {
+          "key": 5907,
+          "doc_count": 6470
+        },
+        {
+          "key": 5060,
+          "doc_count": 6202
+        },
+        {
+          "key": 5925,
+          "doc_count": 5843
+        },
+        {
+          "key": 445,
+          "doc_count": 5595
+        },
+        {
+          "key": 5906,
+          "doc_count": 4909
+        },
+        {
+          "key": 5908,
+          "doc_count": 4643
+        },
+        {
+          "key": 3000,
+          "doc_count": 3376
+        }
+      ]
+    }
+  }
+}
