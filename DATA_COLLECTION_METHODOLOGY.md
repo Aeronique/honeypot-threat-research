@@ -33,7 +33,7 @@ A consistent filter excludes the internal Google Cloud VM IP address (`10.128.0.
 
 The following six queries are run each day. Only the date values are updated between days. All other parameters remain identical across the 28-day deployment period.
 
-| Query | What It Returns |
+| Query | Return |
 |-------|----------------|
 | Total Count | Single integer representing all attack events recorded that day, excluding internal IP |
 | Top ASNs | Top 20 autonomous system numbers by event count, showing which networks sent the most traffic |
@@ -99,6 +99,7 @@ The following limitations apply to this dataset and are disclosed in the interes
 - Elasticsearch log retention is 30 days by default. The final full-dataset query on March 1, 2026 captures all 28 days of this deployment before any indices roll off.
 - CVE identification depends on Suricata ruleset coverage. Exploitation attempts against vulnerabilities without matching Suricata rules will appear in total event counts but will not be attributed to a specific CVE.
 - Geographic attribution relies on MaxMind GeoIP database accuracy, which has known limitations for cloud provider IP ranges and VPN exit nodes.
+- Elasticsearch event counts will differ significantly from T-Pot's built-in dashboard totals. The dashboard counts structured honeypot interaction records. Elasticsearch indexes all underlying log entries including raw flow records, incomplete connection attempts, and duplicate Suricata alerts, producing a much higher total figure. Both numbers are valid for different purposes.
 
 ---
 

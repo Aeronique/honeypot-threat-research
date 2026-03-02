@@ -13,7 +13,7 @@ All data was pulled directly from Elasticsearch using DSL queries through the Ki
 | **Platform** | T-Pot Community Edition on Ubuntu 24.04 LTS |
 | **Infrastructure** | Google Cloud Platform |
 | **Period** | February 1 to February 28, 2026 |
-| **Total Events** | TBD (final count March 1, 2026) |
+| **Total Events** | 96,408,585 |
 | **Days Captured** | 28 of 28 |
 | **Collection Method** | Elasticsearch DSL queries, daily |
 
