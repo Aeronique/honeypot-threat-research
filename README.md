@@ -6,7 +6,7 @@ All data was pulled directly from Elasticsearch using DSL queries through the Ki
 
 ---
 
-## Deployment at a Glance
+## Deployment
 
 | | |
 |---|---|
@@ -19,7 +19,7 @@ All data was pulled directly from Elasticsearch using DSL queries through the Ki
 
 ---
 
-## What's in Here
+## Structure (Tenative)
 
 ```
 honeypot-threat-research/
