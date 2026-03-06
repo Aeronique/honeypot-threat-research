@@ -4,15 +4,16 @@ title: "T-Pot Honeypot: Top CVEs by Event Volume - February 2026"
 date: 2026-03-05
 category: THREAT INTELLIGENCE
 tags:tags: ["honeypot", "threat-intelligence", "CVE", "T-Pot", "Suricata", "GCP", "threat-analysis"]
-permalink: /writeups/honeypot-threat-research-01/
+permalink: /writeups/honeypot-threat-research/01
 excerpt: "Analysis of the three highest-volume CVEs observed across a 28-day T-Pot honeypot deployment on Google Cloud Platform, February 2026."
 ---
 
-# Top CVEs by Event Volume: February 2026 Honeypot Deployment
-
 **Deployment Period:** 2026/02/01 to 2026/02/28
+
 **Honeypot:** T-Pot Community Edition, Google Cloud Platform
+
 **Data Source:** Elasticsearch DSL queries, Kibana Dev Tools
+
 **TLP:** TLP:CLEAR
 
 ---
@@ -154,13 +155,13 @@ An unsafe deserialization flaw in the React Server Components (RSC) "Flight" pro
 
 **CVE-2018-13379 double-signature:** Two Suricata rules fired for this CVE with identical per-day counts, meaning they matched the same traffic. This report uses one signature's count (29,938). The combined total across both signatures is 59,876.
 
-**CVSS sourcing:** NVD is the primary CVSS source in this report. For CVE-2018-13379, NVD publishes 9.8 and Shodan CVEDB returns 9.1. This kind of discrepancy is common. For CVE-2024-14007, NVD has not published a v3 score; the v4.0 score of 8.7 comes from VulnCheck. For CVE-2025-55182, NVD has not completed its analysis; the score of 10.0 comes from the CNA (Meta).
+**CVSS sourcing:** NVD is the primary CVSS source in this report. For CVE-2018-13379, NVD publishes 9.8 and Shodan CVEDB returns 9.1. This kind of discrepancy is common. For CVE-2024-14007, NVD has not published a v3 score; the v4.0 score of 8.7 comes from VulnCheck. For CVE-2025-55182, NVD has not completed its analysis and the score of 10.0 comes from the CNA (Meta).
 
 **EPSS scores** come from Shodan CVEDB and reflect a single point in time snapshot. The score for CVE-2024-14007 (0.07%) may not yet reflect full exploitation data given how recently the CVE was formally published.
 
 ---
 
-*All data sourced from Elasticsearch DSL queries against T-Pot honeypot logs, 2026/02/01 through 2026/02/28. Raw query output is preserved in `/data/`.*
+*All data sourced from Elasticsearch DSL queries against T-Pot honeypot logs, 2026/02/01 through 2026/02/28. Raw query output is preserved in honeypot-threat-research/data[https://github.com/Aeronique/honeypot-threat-research/tree/main/data].*
 
 ---
 
