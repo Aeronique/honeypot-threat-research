@@ -1,19 +1,11 @@
 ---
-
 layout: writeup
 title: "T-Pot Honeypot: Top CVEs by Event Volume - February 2026"
 date: 2026-03-05
 category: THREAT INTELLIGENCE
-tags:
-
-honeypot
-CVE
-T-Pot
-Suricata
-GCP
-threat-intelligence
+tags:tags: ["honeypot", "threat-intelligence", "CVE", "T-Pot", "Suricata", "GCP", "threat-analysis"]
+permalink: /writeups/honeypot-threat-research-01/
 excerpt: "Analysis of the three highest-volume CVEs observed across a 28-day T-Pot honeypot deployment on Google Cloud Platform, February 2026."
-
 ---
 
 # Top CVEs by Event Volume: February 2026 Honeypot Deployment
