@@ -59,7 +59,7 @@ honeypot-threat-research/
 |--------|-------------|
 | [Top CVEs](reports/01_top_cves.md) | The three highest-volume CVEs across the full deployment, with daily counts and campaign context |
 | [Most Recent CVE](reports/02_most_recent_cve.md) | How fast attackers picked up a newly disclosed CVE and started using it |
-| [Legacy Vulnerability Exploitation](reports/08_legacy_vulnerability_exploitation.md) | CVEs from 2006 and earlier that were still showing up daily, and what that says about the state of unpatched systems |
+| [Legacy Vulnerability Exploitation](reports/08_legacy_vulnerability_exploitation.md) | Pre-2017 CVEs that still generated inbound traffic during the deployment, and what they reveal about long-unpatched devices |
 
 ### Campaign Analysis
 
