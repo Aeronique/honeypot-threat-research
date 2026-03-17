@@ -26,13 +26,13 @@ excerpt: "Analysis of CVE-2026-24061, the most recently disclosed CVE observed i
 
 ## About This Report
 
-This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment. I'm open to constructive feedback.
+This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment.
 
 ---
 
 ## Summary
 
-CVE-2026-24061 is the most recently disclosed CVE observed in this dataset. It was published on 2026/01/21, less than two weeks before this deployment began. The honeypot recorded **9 events** across **4 days**, making it a low-volume but contextually notable finding. Exploitation attempts were visible within days of disclosure and continued into late February.
+CVE-2026-24061 is the most recently disclosed CVE observed in this dataset. It was published on 2026/01/21, less than two weeks before this deployment began. The honeypot recorded **9 events** across **4 days**, making it a low-volume but notable finding. Exploitation attempts were seen within days of disclosure and continued into late February.
 
 ---
 
@@ -78,7 +78,7 @@ An argument injection flaw in GNU InetUtils `telnetd`. During Telnet `NEW_ENVIRO
 
 ## Methodology Notes
 
-**Event counts reflect IDS alerts, not confirmed exploitation.** A Suricata signature match means inbound traffic matched a known attack pattern. The honeypot is not a real `telnetd` host, so these are reconnaissance or probing attempts, not successful root access.
+**Event counts reflect IDS alerts and is not confirmed exploitation.** A Suricata signature match means inbound traffic matched a known attack pattern. The honeypot is not a real `telnetd` host, so these are reconnaissance or probing attempts, not successful root access.
 
 **Days with 0 events are omitted from the main table rows** but retained in the collapsed row above for completeness.
 
@@ -95,7 +95,7 @@ An argument injection flaw in GNU InetUtils `telnetd`. During Telnet `NEW_ENVIRO
 | NVD: CVE-2026-24061 | https://nvd.nist.gov/vuln/detail/CVE-2026-24061 |
 | CVE Record: CVE-2026-24061 | https://www.cve.org/CVERecord?id=CVE-2026-24061 |
 | CISA KEV Catalog | https://www.cisa.gov/known-exploited-vulnerabilities-catalog |
-| oss-security: GNU InetUtils telnetd disclosure | https://www.openwall.com/lists/oss-security/2026/01/19/1 |
+| oss-security: GNU InetUtils telnetd disclosure | https://www.openwall.com/lists/oss-security/2026/01/20/2 |
 | GNU bug-inetutils: Patch announcement | https://lists.gnu.org/archive/html/bug-inetutils/2026-01/msg00004.html |
 | Codeberg: Fix commit (sanitize USER variable) | https://codeberg.org/inetutils/inetutils/commit/fd702c02497b2f398e739e3119bed0b23dd7aa7b |
 | Shodan CVEDB: CVE-2026-24061 | https://cvedb.shodan.io/cve/CVE-2026-24061 |
