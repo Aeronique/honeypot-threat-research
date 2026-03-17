@@ -1,15 +1,18 @@
 # Campaign Report: Fortinet FortiOS SSL VPN Scanning
 
 **Deployment Period:** 2026/02/01 to 2026/02/28
+
 **Honeypot:** T-Pot Community Edition, Google Cloud Platform
+
 **Data Source:** Elasticsearch DSL queries, Kibana Dev Tools
+
 **TLP:** TLP:CLEAR
 
 ---
 
 ## About This Report
 
-This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment. I'm open to constructive feedback.
+This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment.
 
 ---
 
@@ -148,4 +151,4 @@ If patching is not immediately possible, Fortinet's own advisory suggests disabl
 | CISA Known Exploited Vulnerabilities Catalog | https://www.cisa.gov/known-exploited-vulnerabilities-catalog |
 | CISA Advisory AA21-209A: Top Routinely Exploited Vulnerabilities | https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-209a |
 | AttackerKB: CVE-2018-13379 | https://attackerkb.com/topics/VEc81wfDS7/cve-2018-13379-path-traversal-in-fortinet-fortios |
-| Shodan CVEDB: CVE-2018-13379 | https://www.shodan.io/vuln/CVE-2018-13379 |
+| Shodan CVEDB: CVE-2018-13379 | https://cvedb.shodan.io/dashboard/cve/CVE-2018-13379 |
