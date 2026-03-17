@@ -40,7 +40,7 @@ CVE-2026-24061 is the most recently disclosed CVE observed in this dataset. It w
 
 Telnet is an old remote access protocol, largely replaced by SSH. `telnetd` is the server-side component that handles incoming Telnet connections. This vulnerability exists in the GNU InetUtils version of `telnetd`.
 
-The flaw is simple: when a client connects, it can send a username as part of the connection. `telnetd` passes that username directly to the system's login program without checking it first. An attacker can send `-f root` as the username, which tells the login program to skip the password check and log in as root. No password needed. The bug was introduced in a 2015 code change and went unnoticed for over 10 years.
+The flaw comes down to a missing input check. When a client connects, it can send a username as part of the connection. `telnetd` passes that username directly to the system's login program without checking it first. An attacker can send `-f root` as the username, which tells the login program to skip the password check and log in as root. No password needed. The bug was introduced in a 2015 code change and went unnoticed for over 10 years.
 
 **Affected products:** GNU InetUtils `telnetd` versions 1.9.3 through 2.7. Fixed in 2.7-2, patches released 2026/01/20.
 
