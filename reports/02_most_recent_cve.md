@@ -26,19 +26,21 @@ excerpt: "Analysis of CVE-2026-24061, the most recently disclosed CVE observed i
 
 ## About This Report
 
-This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment.
+This report is part of a hands-on project focused on building practical skills in threat data analysis and CVE research. It is one report in an ongoing series covering the February 2026 T-Pot deployment. I'm open to constructive feedback.
 
 ---
 
 ## Summary
 
-CVE-2026-24061 is the most recently disclosed CVE observed in this dataset. It was published on 2026/01/21, less than two weeks before this deployment began. The honeypot recorded **9 events** across **4 days**, making it a low-volume but notable finding. Exploitation attempts were seen within days of disclosure and continued into late February.
+CVE-2026-24061 is the most recently disclosed CVE observed in this dataset. It was published on 2026/01/21, less than two weeks before this deployment began. The honeypot recorded **9 events** across **4 days**. The numbers are small, but the timing stood out to me. Scanners were already looking for this vulnerability before the month even started.
 
 ---
 
 ## CVE-2026-24061: GNU InetUtils telnetd Authentication Bypass
 
-An argument injection flaw in GNU InetUtils `telnetd`. During Telnet `NEW_ENVIRON` option negotiation, the client can supply a `USER` environment variable. `telnetd` passes this value unsanitized to `/usr/bin/login` as a command-line argument. Sending `USER` as `-f root` causes `login` to skip authentication entirely and grant a root shell. No credentials are required. No user interaction is required. The flaw was introduced in a 2015 commit and went undetected for over 10 years.
+Telnet is an old remote access protocol, largely replaced by SSH. `telnetd` is the server-side component that handles incoming Telnet connections. This vulnerability exists in the GNU InetUtils version of `telnetd`.
+
+The flaw is simple: when a client connects, it can send a username as part of the connection. `telnetd` passes that username directly to the system's login program without checking it first. An attacker can send `-f root` as the username, which tells the login program to skip the password check and log in as root. No password needed. The bug was introduced in a 2015 code change and went unnoticed for over 10 years.
 
 **Affected products:** GNU InetUtils `telnetd` versions 1.9.3 through 2.7. Fixed in 2.7-2, patches released 2026/01/20.
 
@@ -49,11 +51,11 @@ An argument injection flaw in GNU InetUtils `telnetd`. During Telnet `NEW_ENVIRO
 | CISA KEV | Yes, added 2026/01/26 | CISA |
 | Ransomware | Unknown | Shodan CVEDB |
 
-**Observed activity:** **9 total events** across 4 active days. The first event appeared on 2026/02/01, 11 days after disclosure. Day 1 accounted for **6 of the 9 events**, the highest single-day count. The remaining 3 events were spread across 2026/02/04, 2026/02/06, and 2026/02/20.
+**Observed activity:** **9 total events** across 4 active days. The first hit came on 2026/02/01, 11 days after disclosure. Six of the nine events happened on that first day. The remaining 3 were spread across 2026/02/04, 2026/02/06, and 2026/02/20.
 
-**Assessment:** This CVE was under two weeks old when the deployment started. Scanners were probing for it within 11 days of public disclosure. GreyNoise documented exploitation attempts from multiple countries starting within 18 hours of the original announcement. The CISA KEV addition on 2026/01/26 confirms real-world exploitation was already underway before this honeypot collected its first event. The low event count here is consistent with a niche target surface. `telnetd` is not common on modern internet-facing hosts, so scanning campaigns for this CVE reach fewer responding services than broader web application scans. The declining activity after day 1 may reflect reduced scanning cadence as automated tools moved on.
+**Assessment:** What I found interesting here is the speed. GreyNoise documented exploitation attempts starting within 18 hours of the original disclosure. CISA added it to the KEV catalog on 2026/01/26, six days after the patch dropped, which tells you real exploitation was happening fast. By the time my honeypot went live, scanners had already been active for nearly two weeks. The low event count makes sense too. Telnet is uncommon on modern internet-facing systems, so there are fewer targets to scan for compared to something like a web application vulnerability.
 
-**Defender note:** Patch to GNU InetUtils 2.7-2 or later. If `telnetd` is not needed, disable it entirely. If you manage embedded Linux devices, network appliances, or OT systems running older distributions, check whether `inetutils-telnetd` is installed. CISA's KEV deadline for federal agencies was 2026/02/16.
+**Defender note:** Patch to GNU InetUtils 2.7-2 or later, or disable `telnetd` entirely if you are not using it. This one is worth checking on older or embedded Linux systems where Telnet may still be running and easy to overlook. CISA's remediation deadline for federal agencies was 2026/02/16.
 
 ---
 
@@ -78,7 +80,7 @@ An argument injection flaw in GNU InetUtils `telnetd`. During Telnet `NEW_ENVIRO
 
 ## Methodology Notes
 
-**Event counts reflect IDS alerts and is not confirmed exploitation.** A Suricata signature match means inbound traffic matched a known attack pattern. The honeypot is not a real `telnetd` host, so these are reconnaissance or probing attempts, not successful root access.
+**Event counts reflect IDS alerts, not confirmed exploitation.** Suricata flagged traffic that matched a known attack pattern for this CVE. The honeypot is not a real `telnetd` host, so none of these attempts could have succeeded. The counts show inbound probe volume only.
 
 **Days with 0 events are omitted from the main table rows** but retained in the collapsed row above for completeness.
 
