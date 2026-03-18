@@ -1,4 +1,4 @@
----
+ ---
 layout: writeup
 title: "Campaign Report: DoublePulsar Backdoor Communication"
 date: 2026-03-17
