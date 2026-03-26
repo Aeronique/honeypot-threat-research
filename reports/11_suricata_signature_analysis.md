@@ -1,4 +1,4 @@
-# Suricata Signature Analysis: What the Alerts Told Me
+# Suricata Signature Analysis
 
 **Deployment Period:** February 1, 2026 to February 28, 2026  
 **Honeypot:** T-Pot Community Edition, Google Cloud Platform  
