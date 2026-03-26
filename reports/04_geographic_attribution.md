@@ -1,20 +1,3 @@
----
-
-layout: writeup
-title: "T-Pot Honeypot: Geographic Attribution - February 2026"
-date: 2026-03-05
-category: THREAT INTELLIGENCE
-tags:
-
-honeypot
-GCP
-geographic-attribution
-T-Pot
-threat-intelligence
-excerpt: "Where attack traffic originated during a 28-day T-Pot honeypot deployment, and why cloud provider and VPN exit node usage limits attribution confidence."
-
----
-
 # Geographic Attribution: February 2026 Honeypot Deployment
 
 **Deployment Period:** February 1, 2026 to February 28, 2026
