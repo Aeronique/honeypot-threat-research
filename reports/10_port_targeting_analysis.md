@@ -1,10 +1,21 @@
-
-
-# Port Targeting Analysis: Service Exposure and Traffic Shifts
+---
+layout: writeup
+title: "Port Targeting Analysis"
+date: 2026-03-26
+category: THREAT INTELLIGENCE
+tags: ["honeypot", "threat-intelligence", "T-Pot", "GCP", "ports", "scanning"]
+permalink: /writeups/honeypot-threat-research/10
+excerpt: "Three ports accounted for 88% of all inbound traffic across 28 days. HTTPS, VNC, and an alternate HTTPS port dominated, with a concentrated SNMP burst hitting 1.3 million events in just 48 hours before going completely silent."
+back_url: /honeypot-threat-research/
+back_label: Back to 28 Days Exposed
+---
 
 **Deployment Period:** 2026/02/01 to 2026/02/28
+
 **Honeypot:** T-Pot Community Edition, Google Cloud Platform
+
 **Data Source:** Elasticsearch DSL queries, Kibana Dev Tools
+
 **TLP:** TLP:CLEAR
 
 ---
