@@ -19,7 +19,7 @@ All data was pulled directly from Elasticsearch using DSL queries through the Ki
 
 ---
 
-## Structure (Tenative)
+## Structure
 
 ```
 honeypot-threat-research/
